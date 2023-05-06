@@ -1,0 +1,38 @@
+Your exercise:
+- Consider which approach to error handling is most convenient. 
+- Which type of it allows for the safest and which for the fastest 
+  code creation.
+
+### why is throwing exceptions best way to handle errors in code?
+- Using exceptions for error handling makes your code simpler, 
+  cleaner, and less likely to miss errors. 
+
+- Preferred way to report and handle both logic errors 
+  and runtime errors is to use exceptions. 
+  Logic errors that are caused by programming mistakes, 
+  for example, an "index out of range" error. 
+  And, runtime errors that are beyond the control of programmer, 
+  for example, a "network service unavailable" error.
+
+Question: Consider how you can return an error code when using a
+constructor with a parameter? 
+https://stackoverflow.com/questions/45643859/how-to-return-error-code-from-constructor 
+- constructors dont have return type so the best way to deal 
+with error is to throw exception.
+
+
+### Important difference and reasons the other two are inefficiant:  
+- Using if statements such as in CFileErrorCode your error 
+handling and your normal code are closely intertwined. 
+That way, your code gets messy and it becomes hard to ensure that 
+you have dealt with all errors (“spaghetti code”).
+
+- GetLastError function retrieves the last error that was 
+reported by the call stack. In both of these cases, it's up to 
+the caller to recognize the code and respond to it appropriately. 
+If the caller doesn't explicitly handle the error code, the 
+program might crash without warning. Or, it might continue to 
+execute using bad data and produce incorrect results.    
+
+https://learn.microsoft.com/en-us/cpp/cpp/errors-and-exception-handling-modern-cpp?view=msvc-170 
+https://isocpp.org/wiki/faq/exceptions#why-exceptions 

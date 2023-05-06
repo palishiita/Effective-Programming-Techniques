@@ -1,0 +1,16 @@
+Hi!!: Printed by CFileLastError class
+a
+b
+c
+Hi!!: Printed by CFileLastError class
+a
+b
+c
+Hi!!: Printed by CFileLastError class
+a
+b
+c
+Hi!!: Printed by CFileLastError class
+a
+b
+c
